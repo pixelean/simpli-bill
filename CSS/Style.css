@@ -25,18 +25,21 @@
   background-image: linear-gradient(to right, #0f1511, #15282b);
   padding: 0px 135px;
 }
+
 .BannerHeading {
   font-family: Gilroy;
   font-weight: 700;
   font-size: 64px;
   line-height: 70px-;
 }
+
 .bannerContent {
   font-family: Gilroy;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
 }
+
 .primaryBtn {
   background-color: #0dc8de;
   color: white;
@@ -47,25 +50,36 @@
   border-radius: 56px;
   margin-top: 2rem;
 }
+
+.primaryBtn:hover {
+  background-color: white;
+  border: 1px solid #0dc8de;
+  color: black;
+}
+
 @media only screen and (max-width: 600px) {
   .bannerContainer {
     padding: 0px 0px !important;
   }
+
   .BannerHeading {
     font-size: 42px;
     line-height: 48px;
   }
+
   .bannerContent {
     margin-top: 5%;
     font-size: 18px;
     line-height: 32px;
   }
+
   .primaryBtn {
     font-size: 20px;
     line-height: 32px;
     padding: 5px 25px;
     margin-top: 2rem;
   }
+
   .bannerImg {
     width: 90%;
     margin-bottom: 2rem;
@@ -78,6 +92,7 @@
 .aboutContainer {
   padding: 0px 135px !important;
 }
+
 .aboutHeading {
   font-family: Gilroy;
   font-weight: 700;
@@ -96,14 +111,17 @@
   .aboutContainer {
     padding: 0px 0px !important;
   }
+
   .aboutImg {
     width: 90%;
     margin: 0% auto;
   }
+
   .aboutHeading {
     font-size: 42px;
     line-height: 48px;
   }
+
   .aboutContentContainer {
     padding: 7% 5%;
   }
@@ -117,20 +135,24 @@
   background-color: #107e4c;
   /* color: white; */
 }
+
 .servicesCardContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
+
 #servicesCardSize {
   width: 565 !important;
   height: 298 !important;
   padding: 30px 40px;
   color: white;
 }
+
 .servicesMainHeading {
   padding-bottom: 100px;
 }
+
 .servicesCard {
   background: rgba(255, 255, 255, 0.2);
   /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
@@ -140,6 +162,7 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
 }
+
 .servicesHeading {
   font-family: Gilroy;
   font-style: Bold;
@@ -149,6 +172,7 @@
   margin-top: 94px;
   margin-bottom: 10px;
 }
+
 .servicesSubHeading {
   font-family: Gilroy;
   font-style: Bold;
@@ -157,6 +181,7 @@
   margin-bottom: 60px;
   color: white;
 }
+
 .BillList {
   font-family: Gilroy;
   font-style: Medium;
@@ -164,17 +189,20 @@
   line-height: 32px;
   margin-left: 10px;
 }
+
 @media only screen and (max-width: 600px) {
   .servicesCardContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
   }
+
   .servicesHeading {
     font-size: 42px;
     line-height: 48px;
     margin-top: 54px;
   }
+
   .servicesSubHeading {
     margin-bottom: 40px;
   }
@@ -188,6 +216,7 @@
   width: 570px !important;
   height: 690px !important;
 }
+
 .billHeading {
   color: #0f1511;
   font-family: Gilroy;
@@ -195,6 +224,7 @@
   font-size: 48px;
   line-height: 56px;
 }
+
 .billSubContent {
   font-family: Gilroy;
   font-size: 18px;
@@ -212,7 +242,8 @@
   background-repeat: no-repeat;
   padding: 0px 135px;
 }
-.formHeading > h1 {
+
+.formHeading>h1 {
   font-family: "Gilroy";
   font-weight: 700;
   font-size: 48px;
@@ -222,7 +253,8 @@
   color: #0f1511;
   padding-top: 100px;
 }
-.formHeading > p {
+
+.formHeading>p {
   font-family: "Gilroy";
   font-weight: 400;
   font-size: 18px;
@@ -232,27 +264,46 @@
   margin-top: 20px;
 }
 
-input {
-  border: 5px solid #7ba4a9;
+.inputsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  column-gap: 10%;
+}
+
+.inputBox {
+  width: 970px;
+  /* height: 562px; */
+  margin: 0% auto;
+}
+
+.inputParent input {
+  border: 1px solid #7ba4a9;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
   background-color: #f4feff;
   width: 360px !important;
+
+}
+
+.inputParent label {
+  Font-family: Gilroy;
+  font-weight: 700;
+  Font-size: 16px;
+  Line-height: 24px;
+
 }
 
 .no-outline:focus {
   outline: none;
 }
 
-.inputsContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 10%;
-}
 .inputParent {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 64px;
   margin-top: 30px;
 }
 
@@ -265,12 +316,61 @@ input {
   border-radius: 61px;
   text-align: center;
   color: white;
-  margin-top: 50px;
+  margin-top: 53px;
   margin-bottom: 93px !important;
 }
+
+.submitBtn:hover {
+  background-color: #f4feff;
+  border: 1px solid #0dc8de;
+  color: black;
+}
+
 .submitBtnContainer {
   display: flex;
   justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .formContainer {
+    padding: 0px 10px;
+  }
+
+  .inputsContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10%;
+  }
+
+  .formHeading>h1 {
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .inputBox {
+    width: 90 !important;
+    /* height: 562px; */
+    margin: 0% auto;
+  }
+
+  .inputParent input {
+    width: 35% !important;
+
+  }
+
+  .submitBtn {
+    padding: 14px 20px;
+    width: 220px;
+    height: 52px;
+    margin-top: 90px;
+    margin-bottom: 50px !important;
+  }
+
+  input {
+    width: 90% !important;
+  }
 }
 
 /*--------------------------------------------------
@@ -287,11 +387,13 @@ input {
   align-items: center;
   justify-content: space-between;
 }
+
 .talkImage {
   width: 546.6px;
   height: 594.22px;
   margin-top: -6%;
 }
+
 .talkBtn {
   /* background-color: #0dc8de; */
   color: white;
@@ -303,6 +405,7 @@ input {
   border: 1px solid #0dc8de;
   margin-top: 30px;
 }
+
 .talkBtn:hover {
   background-color: #0dc8de;
 }
@@ -314,11 +417,13 @@ input {
     height: 710px;
     flex-direction: column;
   }
+
   .talkImage {
     width: 90% !important;
     height: 80% !important;
     margin-top: 0%;
   }
+
   .talkBtn {
     /* background-color: #0dc8de; */
     color: white;
@@ -339,13 +444,20 @@ input {
   background-color: #0f1511;
   padding: 0px 135px !important;
 }
+
+.LinkContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+
 .footerLinks {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 15%;
 }
 
-.footerLeftSection > h1 {
+.footerLeftSection>h1 {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 600;
@@ -354,7 +466,8 @@ input {
   color: white;
   margin-top: 40px;
 }
-.footerLeftSection > p {
+
+.footerLeftSection>p {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
@@ -364,7 +477,7 @@ input {
   margin-top: 20px;
 }
 
-.links > ul > li > a {
+.links>ul>li>a {
   color: #d5d5d5;
   font-family: "Gilroy";
   font-style: normal;
@@ -373,10 +486,31 @@ input {
   line-height: 28px;
   margin-bottom: 16px;
 }
-.links > p {
+
+.links>p {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+  .LinkContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* justify-content: space-between; */
+  }
+
+  .footerLinks {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 5%;
+    margin-top: 5%;
+  }
+
+  .footerContainer {
+    /* background-image: linear-gradient(to right, #0f1511, #15282b); */
+    padding: 0px 10px !important;
+  }
 }
