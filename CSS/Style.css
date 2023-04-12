@@ -26,7 +26,7 @@
   padding: 0px 135px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between !important;
+  justify-content: space-between !important;
     align-items: center;
 }
 
@@ -70,7 +70,7 @@
   .bannerContainer {
     padding: 0px 10px !important;
     display: grid;
-      grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
       align-items: center;
   }
 
@@ -166,7 +166,7 @@
 .aboutContainer {
   padding: 140px 135px !important;
   display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
     align-items: center;
     background-image: url("../Asset/aboutVector.png");
     background-repeat: no-repeat;
@@ -191,7 +191,7 @@
   .aboutContainer {
     padding: 30px 10px !important;
     display: grid;
-      grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
       justify-content: center;
   }
 
@@ -265,7 +265,7 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
   width: 565px !important;
-    height: 298px !important;
+  height: 298px !important;
     padding: 30px 40px;
   }
   
@@ -312,8 +312,9 @@
 
 @media only screen and (max-width: 600px) {
   .servicesSection {
-      padding: 50px 10px;
+    padding: 50px 10px;
     }
+
   .servicesCardContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -325,6 +326,7 @@
           height: 100% !important;
           padding: 15px 20px;
         }
+
   .servicesHeading {
     font-size: 42px;
     line-height: 48px;
@@ -389,6 +391,7 @@
             padding: 15px 30px;
           }
         }
+
 /*--------------------------------------------------
                 Form  Section 
 ----------------------------------------------------*/
@@ -423,7 +426,7 @@
 
 .inputsContainer {
   display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
     column-gap: 1%;
 }
 
@@ -499,14 +502,14 @@
 
   .formHeading>h1 {
     font-size: 36px;
-      line-height: 42px;
+    line-height: 42px;
     text-align: center;
     padding-top: 50px;
   }
 
   .inputBox {
     width: 90% !important;
-      margin: 0% auto;
+    margin: 0% auto;
     }
     
     .inputParent input {
@@ -618,6 +621,7 @@
   font-size: 48px;
   line-height: 56px;
 }
+
 .billSubContent {
   font-family: Gilroy;
   font-size: 18px;
@@ -632,19 +636,18 @@
 .talkContainer {
   background-color: #107e4c;
   padding: 0px 135px;
-  /* width: 1440px; */
   height: 539px;
-  /* display: grid;
-  grid-template-columns: repeat(2,1fr); */
-  display: flex;
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: space-between;
 }
 
 .talkImage {
-  width: 546.6px;
-  height: 594.22px;
-  margin-top: -6%;
+  width: 546.6px !important;
+    height: 594.22px !important;
+    margin-left: auto;
+    margin-top: -16%;
 }
 
 .talkBtn {
@@ -665,16 +668,17 @@
 
 @media only screen and (max-width: 600px) {
   .talkContainer {
-    padding: 0px 10px;
-    /* width: 1440px; */
-    height: 710px;
+    padding: 30px 10px;
+      height: 850px;
     flex-direction: column;
+    display: grid;
+      grid-template-columns: repeat(1, 1fr);
   }
 
   .talkImage {
     width: 90% !important;
     height: 80% !important;
-    margin-top: 0%;
+    margin: 0% auto;
   }
 
   .talkBtn {
@@ -689,6 +693,45 @@
   }
 }
 
+@media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
+  .talkContainer {
+    padding: 30px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .talkImage {
+    width: 90% !important;
+    height: 80% !important;
+    margin: 0% auto;
+  }
+
+  .talkBtn {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 12px 40px;
+  }
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 778px) {
+  .talkContainer {
+    padding: 0px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .talkImage {
+    width: 90% !important;
+    height: 80% !important;
+    margin: 0% auto;
+  }
+
+  .talkBtn {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 12px 40px;
+  }
+}
 /*--------------------------------------------------
                 Footer  Section 
 ----------------------------------------------------*/
