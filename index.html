@@ -11,25 +11,26 @@
   <meta name="keywords" content="keywords,here" />
 
   <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
 
-  <!-- Google Fonts -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> -->
 
   <!-- Custom Fonts -->
   <link rel="stylesheet" href="/font/stylesheet.css">
 
+  <!-- Web flow -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+  
+  <!-- Daisi Ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
 
   <!-- Css -->
   <link rel="stylesheet" href="CSS/Style.css" />
+
 </head>
 
 <body class=" leading-normal tracking-normal">
   <!--Nav-->
-  <nav class="navContainer p-2 mt-0 w-full">
-    <!-- Add this to make the nav fixed: "fixed z-10 top-0" -->
+  <!-- <nav class="navContainer p-2 mt-0 w-full">
+                                                                                                                            
     <div class="container mx-auto flex flex-wrap items-center">
       <div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
         <a class="text-white no-underline hover:text-white hover:no-underline" href="#">
@@ -56,12 +57,46 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
+  
+  
+  
+  <div class="navbar navContainer">
+    <div class="navbar-start">
+      <img src="./Asset/simplibill 1.png" alt="" />
+      <div class="dropdown flex  !ml-auto">
+        <label tabindex="0" class="btn btn-ghost lg:hidden ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </label>
+        <ul tabindex="0"
+          class="menu menu-compact !focus:bg-none !hover:bg-none  dropdown-content mt-14 p-2 shadow bg-base-100 rounded-box w-52 ">
+          <li><a class="active:bg-white">Home</a></li>
+          <li><a class="active:bg-white">Services</a></li>
+          <li><a class="active:bg-white">Features</a></li>
+          <li><a class="active:bg-white">About Us</a></li>
+        </ul>
+      </div>
+  
+    </div>
+    <div class="navbar-end hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 text-white">
+        <li><a class="active:bg-black">Home</a></li>
+        <li><a class="active:bg-black">Services</a></li>
+        <li><a class="active:bg-black">Features</a></li>
+        <li><a class="active:bg-black">About Us</a></li>
+      </ul>
+    </div>
+  
+  </div>
+
 
   <!----------- Banner ------------->
-  <div class="bannerContainer text-white mx-auto flex  flex-col md:flex-row  items-center">
+  <div class="bannerContainer">
     <!--Left Col-->
-    <div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6">
+    <div class="text-white">
       <h1 class="BannerHeading">Simplibill RCM & Technology.</h1>
       <p class="bannerContent leading-normal">
         We specialize in providing comprehensive solutions to healthcare
@@ -73,22 +108,20 @@
       </button>
     </div>
     <!--Right Col-->
-    <div class="w-full lg:w-1/2 lg:py-6 text-center bannerImg">
-      <!--Add your product image here-->
+    <div class=" bannerImg">
       <img src="./Asset/Group 38.png" alt="" />
     </div>
   </div>
 
 
   <!-- About Us -->
-  <div
-    class="aboutContainer container text-black mx-auto flex flex-col justify-between md:flex-row items-center md:my-24">
-    <div class="w-full lg:w-1/2 lg:py-6 text-center ">
+  <div class="aboutContainer ">
+    <div class=" ">
       <!--Add your product image here-->
       <img src="./Asset/Group 34.png" class="aboutImg" alt="" />
     </div>
     <!--Left Col-->
-    <div class="aboutContentContainer flex flex-col w-full lg:w-1/2 justify-center items-start  px-6">
+    <div class="aboutContentContainer ">
 
       <h1 class="aboutHeading">About Us</h1>
       <p class="aboutContent leading-normal my-8">
@@ -110,10 +143,6 @@
     <!--Right Col-->
 
   </div>
-
-
-
-
 
 
 
@@ -139,7 +168,7 @@
 
       <div class="servicesCardContainer">
         <div class="servicesCard" style="width: 556px; height: 298px; padding: 30px 40px;">
-          <div class=" mb-8 flex items-center justify-start rounded-2xl">
+          <div class="">
             <img src="./Asset/Group 53.svg">
           </div>
           <h4 class="text-dark mb-3 text-2xl font-semibold">
@@ -151,11 +180,10 @@
             solutions reduce administrative burdens and compliance risks.
           </p>
         </div>
-        
-        
+
+
         <div class="servicesCard" style="width: 556px; height: 298px; padding: 30px 40px;">
-          <div class=" mb-8 flex items-center justify-start rounded-2xl">
-            <!--  -->
+          <div class="">
             <img src="./Asset/Group 55.svg">
           </div>
           <h4 class="text-dark mb-3 text-2xl font-semibold">
@@ -167,10 +195,10 @@
             implement customized plans based on industry standards.
           </p>
         </div>
-        
-        
+
+
         <div class="servicesCard" style="width: 556px; height: 298px; padding: 30px 40px;">
-          <div class=" mb-8 flex items-center justify-start rounded-2xl">
+          <div class="">
             <img src="./Asset/Group 56.svg">
           </div>
           <h4 class="text-dark mb-3 text-2xl font-semibold">
@@ -185,7 +213,7 @@
         </div>
 
         <div class="servicesCard" style="width: 556px; height: 298px; padding: 30px 40px;">
-          <div class=" mb-8 flex items-center justify-start rounded-2xl">
+          <div class="">
             <img src="./Asset/Group 57.svg">
           </div>
           <h4 class="text-dark mb-3 text-2xl font-semibold">
@@ -198,10 +226,10 @@
             operations.
           </p>
         </div>
-        
-        
+
+
         <div class="servicesCard" style="width: 556px; height: 298px; padding: 30px 40px;">
-          <div class=" mb-8 flex items-center justify-start rounded-2xl">
+          <div class="">
             <img src="./Asset/Group 58.svg">
           </div>
           <h4 class="text-dark mb-3 text-2xl font-semibold">
@@ -220,6 +248,8 @@
     </div>
     </div>
   </section>
+
+
   <!-- ====== Services Section End -->
 
 
@@ -234,7 +264,8 @@
         <p>We conduct a comprehensive analysis of your revenue cycle process and identify areas for improvement such as
           <br />
           coding and billing errors, denials, appeals, and patient collections. We then develop customized solutions to
-          adders <br /> these issues and optimize your revenue cycle performance.</p>
+          adders <br /> these issues and optimize your revenue cycle performance.
+          </p>
       </div>
 
       <form class="mt-16">
@@ -244,37 +275,37 @@
               <div class="inputParent">
                 <label for="name">Name *</label>
                 <input type="text" class="no-outline" id="email" placeholder="Enter your name here">
+              </div>
+              <div class="inputParent">
+                <label for="email">Organization name *</label>
+                <input type="text" class="no-outline" id="email" placeholder="Organization name ">
+              </div>
+              <div class="inputParent ">
+                <label for="phone">Phone</label>
+                <input type="text" class="no-outline" id="phone" placeholder="Enter your phone number here">
+              </div>
+              <div class="inputParent">
+                <label for="communication">Preferred method of communication *</label>
+                <input type="text" class="no-outline" id="comunication" placeholder="Enter your method">
+              </div>
+              </div>
+              
+              
+              <div>
+                <div class="inputParent flex">
+                  <label for="email">Title *</label>
+                  <input type="text" class="no-outline" id="email" placeholder="Enter Title">
                 </div>
                 <div class="inputParent">
-                  <label for="email">Organization name *</label>
-                  <input type="text" class="no-outline" id="email" placeholder="Organization name ">
-                </div>
-                <div class="inputParent ">
-                  <label for="phone">Phone</label>
-                  <input type="text" class="no-outline" id="phone" placeholder="Enter your phone number here">
+                  <label for="email">Organization/Provider specialty *</label>
+                  <input type="text" class="no-outline" id="email" placeholder="Enter your yours speciality">
                 </div>
                 <div class="inputParent">
-                  <label for="communication">Preferred method of communication *</label>
-                  <input type="text" class="no-outline" id="comunication" placeholder="Enter your method">
-                  </div>
-                  </div>
-                  
-                  
-                  <div>
-                    <div class="inputParent flex">
-                      <label for="email">Title *</label>
-                      <input type="text" class="no-outline" id="email" placeholder="Enter Title">
-                    </div>
-                    <div class="inputParent">
-                      <label for="email">Organization/Provider specialty *</label>
-                      <input type="text" class="no-outline" id="email" placeholder="Enter your yours speciality">
-                    </div>
-                    <div class="inputParent">
-                      <label for="email">Email *</label>
-                      <input type="text" class="no-outline" id="email" placeholder="Enter your email address here">
-                    </div>
-                  </div>
-                  </div>
+                  <label for="email">Email *</label>
+                  <input type="text" class="no-outline" id="email" placeholder="Enter your email address here">
+                </div>
+              </div>
+              </div>
         </div>
 
         <div class="submitBtnContainer">
@@ -437,8 +468,8 @@
 
 
 
-
-
+  <!-- Daisy Ui -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
 
 </body>

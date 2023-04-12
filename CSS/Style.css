@@ -24,6 +24,10 @@
 .bannerContainer {
   background-image: linear-gradient(to right, #0f1511, #15282b);
   padding: 0px 135px;
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between !important;
+    align-items: center;
 }
 
 .BannerHeading {
@@ -40,6 +44,10 @@
   line-height: 32px;
 }
 
+.bannerImg {
+  margin-left: auto;
+  margin-bottom: 2rem;
+}
 .primaryBtn {
   background-color: #0dc8de;
   color: white;
@@ -59,12 +67,16 @@
 
 @media only screen and (max-width: 600px) {
   .bannerContainer {
-    padding: 0px 0px !important;
+    padding: 0px 10px !important;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      align-items: center;
   }
 
   .BannerHeading {
     font-size: 42px;
     line-height: 48px;
+    margin-top: 2rem;
   }
 
   .bannerContent {
@@ -81,16 +93,82 @@
   }
 
   .bannerImg {
-    width: 90%;
+    width: 90% !important;
+      margin: 0%;
     margin-bottom: 2rem;
   }
 }
 
+@media only screen and (min-device-width: 578px) and (max-device-width: 778px) {
+
+  .bannerContainer {
+    padding: 0px 20px !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .BannerHeading {
+    font-size: 42px;
+    line-height: 48px;
+    margin-top: 2rem;
+  }
+
+  .bannerContent {
+    margin-top: 5%;
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
+  .bannerContainer {
+    padding: 0px 50px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .BannerHeading {
+    font-size: 42px;
+    line-height: 48px;
+    margin-top: 2rem;
+  }
+
+  .bannerContent {
+    margin-top: 5%;
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (min-device-width: 1035px) and (max-device-width: 1480px) {
+  .bannerContainer {
+    padding: 0px 80px !important;
+
+  }
+
+  .BannerHeading {
+    font-size: 64px;
+    line-height: 70px;
+    margin-top: 2rem;
+  }
+
+  .bannerContent {
+    margin-top: 5%;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
 /*--------------------------------------------------
                 About Section 
 ----------------------------------------------------*/
 .aboutContainer {
-  padding: 0px 135px !important;
+  padding: 140px 135px !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-image: url("../Asset/aboutVector.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
 }
 
 .aboutHeading {
@@ -109,7 +187,10 @@
 
 @media only screen and (max-width: 600px) {
   .aboutContainer {
-    padding: 0px 0px !important;
+    padding: 30px 10px !important;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: center;
   }
 
   .aboutImg {
@@ -127,18 +208,48 @@
   }
 }
 
+@media only screen and (min-device-width: 578px) and (max-device-width: 778px) {
+  .aboutContainer {
+    padding: 50px 20px !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutHeading {
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
+
+@media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
+  .aboutContainer {
+    padding: 80px 50px !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutHeading {
+    font-size: 42px;
+    line-height: 48px;
+  }
+}
 /*--------------------------------------------------
                 Services Section 
 ----------------------------------------------------*/
 
 .servicesSection {
   background-color: #107e4c;
-  /* color: white; */
 }
 
 .servicesCardContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
 
@@ -155,7 +266,6 @@
 
 .servicesCard {
   background: rgba(255, 255, 255, 0.2);
-  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
   backdrop-filter: blur(0px);
   -webkit-backdrop-filter: blur(0px);
   border-radius: 10px;
@@ -273,7 +383,6 @@
 
 .inputBox {
   width: 970px;
-  /* height: 562px; */
   margin: 0% auto;
 }
 
