@@ -25,7 +25,7 @@
   background-image: linear-gradient(to right, #0f1511, #15282b);
   padding: 0px 135px;
   display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
     justify-content: space-between !important;
     align-items: center;
 }
@@ -48,6 +48,7 @@
   margin-left: auto;
   margin-bottom: 2rem;
 }
+
 .primaryBtn {
   background-color: #0dc8de;
   color: white;
@@ -68,7 +69,7 @@
 @media only screen and (max-width: 600px) {
   .bannerContainer {
     padding: 0px 10px !important;
-      display: grid;
+    display: grid;
       grid-template-columns: repeat(1, 1fr);
       align-items: center;
   }
@@ -94,7 +95,7 @@
 
   .bannerImg {
     width: 90% !important;
-      margin: 0%;
+    margin: 0%;
     margin-bottom: 2rem;
   }
 }
@@ -158,12 +159,13 @@
     line-height: 32px;
   }
 }
+
 /*--------------------------------------------------
                 About Section 
 ----------------------------------------------------*/
 .aboutContainer {
   padding: 140px 135px !important;
-    display: grid;
+  display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     background-image: url("../Asset/aboutVector.png");
@@ -188,7 +190,7 @@
 @media only screen and (max-width: 600px) {
   .aboutContainer {
     padding: 30px 10px !important;
-      display: grid;
+    display: grid;
       grid-template-columns: repeat(1, 1fr);
       justify-content: center;
   }
@@ -239,29 +241,20 @@
     line-height: 48px;
   }
 }
+
 /*--------------------------------------------------
                 Services Section 
 ----------------------------------------------------*/
 
 .servicesSection {
   background-color: #107e4c;
+  padding: 100px 135px;
 }
 
 .servicesCardContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-}
-
-#servicesCardSize {
-  width: 565 !important;
-  height: 298 !important;
-  padding: 30px 40px;
-  color: white;
-}
-
-.servicesMainHeading {
-  padding-bottom: 100px;
 }
 
 .servicesCard {
@@ -271,6 +264,24 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
+  width: 565px !important;
+    height: 298px !important;
+    padding: 30px 40px;
+  }
+  
+  .servicesCard>h4 {
+    Font-family: Gilroy;
+    font-weight: 600;
+    Font-size: 24px;
+    Line-height: 32px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .cardTitle>p {
+    Font-family: Gilroy;
+    Font-size: 16px;
+    Line-height: 24px;
 }
 
 .servicesHeading {
@@ -279,7 +290,6 @@
   font-size: 48px;
   line-height: 56px;
   color: white;
-  margin-top: 94px;
   margin-bottom: 10px;
 }
 
@@ -301,12 +311,20 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .servicesSection {
+      padding: 50px 10px;
+    }
   .servicesCardContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 40px;
   }
 
+        .servicesCard {
+          width: 98% !important;
+          height: 100% !important;
+          padding: 15px 20px;
+        }
   .servicesHeading {
     font-size: 42px;
     line-height: 48px;
@@ -318,38 +336,67 @@
   }
 }
 
-/*--------------------------------------------------
-                Simple Bill  Section 
-----------------------------------------------------*/
+@media only screen and (min-device-width: 578px) and (max-device-width: 778px) {
+  .servicesSection {
+    padding: 70px 20px;
+  }
 
-.billBannerImg {
-  width: 570px !important;
-  height: 690px !important;
+    .servicesCardContainer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+
+    .servicesCard {
+      width: 98% !important;
+      height: 100% !important;
+      padding: 15px 20px;
+    }
 }
 
-.billHeading {
-  color: #0f1511;
-  font-family: Gilroy;
-  font-style: Bold;
-  font-size: 48px;
-  line-height: 56px;
-}
+@media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
+  .servicesSection {
+    padding: 80px 50px;
+  }
 
-.billSubContent {
-  font-family: Gilroy;
-  font-size: 18px;
-  line-height: 28px;
-  margin: 5% 0%;
-  color: #333333;
-}
-
+        .servicesCardContainer {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 40px;
+        }
+    
+        .servicesCard {
+          width: 98% !important;
+          height: 100% !important;
+          padding: 15px 30px;
+        }
+        }
+    
+        @media only screen and (min-device-width: 1035px) and (max-device-width: 1450px) {
+          .servicesSection {
+            padding: 100px 80px;
+          }
+    
+          .servicesCardContainer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+          }
+    
+          .servicesCard {
+            width: 98% !important;
+            height: 100% !important;
+            padding: 15px 30px;
+          }
+        }
 /*--------------------------------------------------
                 Form  Section 
 ----------------------------------------------------*/
 .formContainer {
   background-color: #f4feff;
-  background-image: url("./Asset/Vector (3).png");
+  background-image: url("../Asset/fromBg.png");
   background-repeat: no-repeat;
+  background-position: left center;
   padding: 0px 135px;
 }
 
@@ -375,10 +422,9 @@
 }
 
 .inputsContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  column-gap: 10%;
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1%;
 }
 
 .inputBox {
@@ -452,20 +498,95 @@
   }
 
   .formHeading>h1 {
-    font-size: 42px;
-    line-height: 48px;
+    font-size: 36px;
+      line-height: 42px;
     text-align: center;
     padding-top: 50px;
   }
 
   .inputBox {
-    width: 90 !important;
-    /* height: 562px; */
+    width: 90% !important;
+      margin: 0% auto;
+    }
+    
+    .inputParent input {
+      width: 95% !important;
+    
+    }
+    
+    .submitBtn {
+      padding: 14px 20px;
+      width: 220px;
+      height: 52px;
+      margin-top: 90px;
+      margin-bottom: 50px !important;
+    }
+    
+    }
+    
+    @media only screen and (min-device-width: 578px) and (max-device-width: 778px) {
+      .inputsContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* column-gap: 10%; */
+    
+      }
+    
+      .formContainer {
+        padding: 0px 20px;
+      }
+    
+      .inputsContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        /* column-gap: 10%; */
+      }
+    
+      .inputBox {
+        width: 95% !important;
+        margin: 0% auto;
+      }
+    
+      .inputParent input {
+        width: 100% !important;
+      }
+    
+      .submitBtn {
+        padding: 14px 20px;
+        width: 220px;
+        height: 52px;
+        margin-top: 90px;
+        margin-bottom: 50px !important;
+      }
+    }
+    
+    @media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
+      .inputsContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* column-gap: 10%; */
+    
+      }
+    
+      .formContainer {
+        padding: 0px 50px;
+      }
+    
+      .inputsContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        /* column-gap: 10%; */
+      }
+    
+      .inputBox {
+        width: 95% !important;
     margin: 0% auto;
   }
 
   .inputParent input {
-    width: 35% !important;
+    width: 100% !important;
 
   }
 
@@ -477,9 +598,32 @@
     margin-bottom: 50px !important;
   }
 
-  input {
-    width: 90% !important;
-  }
+}
+
+
+/*--------------------------------------------------
+                    Simple Bill  Section 
+    ----------------------------------------------------*/
+
+.billBannerImg {
+  width: 570px !important;
+  height: 690px !important;
+
+}
+
+.billHeading {
+  color: #0f1511;
+  font-family: Gilroy;
+  font-style: Bold;
+  font-size: 48px;
+  line-height: 56px;
+}
+.billSubContent {
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 5% 0%;
+  color: #333333;
 }
 
 /*--------------------------------------------------
