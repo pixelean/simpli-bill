@@ -66,17 +66,16 @@
     padding: 5px 25px;
     margin-top: 2rem;
   }
-  .bannerImg{
+  .bannerImg {
     width: 90%;
     margin-bottom: 2rem;
   }
 }
 
-
 /*--------------------------------------------------
                 About Section 
 ----------------------------------------------------*/
-.aboutContainer{
+.aboutContainer {
   padding: 0px 135px !important;
 }
 .aboutHeading {
@@ -93,28 +92,22 @@
   line-height: 28px;
 }
 
-.talkContainer {
-  background-color: #107e4c;
-  padding: 0px 135px;
-}
 @media only screen and (max-width: 600px) {
-  .aboutContainer{
+  .aboutContainer {
     padding: 0px 0px !important;
   }
-  .aboutImg{
-   width: 90%;
-   margin: 0% auto;
+  .aboutImg {
+    width: 90%;
+    margin: 0% auto;
   }
   .aboutHeading {
     font-size: 42px;
     line-height: 48px;
   }
-  .aboutContentContainer{
+  .aboutContentContainer {
     padding: 7% 5%;
   }
- }
-
-
+}
 
 /*--------------------------------------------------
                 Services Section 
@@ -124,6 +117,20 @@
   background-color: #107e4c;
   /* color: white; */
 }
+.servicesCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+#servicesCardSize {
+  width: 565 !important;
+  height: 298 !important;
+  padding: 30px 40px;
+  color: white;
+}
+.servicesMainHeading {
+  padding-bottom: 100px;
+}
 .servicesCard {
   background: rgba(255, 255, 255, 0.2);
   /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
@@ -131,6 +138,7 @@
   -webkit-backdrop-filter: blur(0px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
 }
 .servicesHeading {
   font-family: Gilroy;
@@ -138,12 +146,15 @@
   font-size: 48px;
   line-height: 56px;
   color: white;
+  margin-top: 94px;
+  margin-bottom: 10px;
 }
 .servicesSubHeading {
   font-family: Gilroy;
   font-style: Bold;
   font-size: 18px;
   line-height: 24px;
+  margin-bottom: 60px;
   color: white;
 }
 .BillList {
@@ -154,9 +165,20 @@
   margin-left: 10px;
 }
 @media only screen and (max-width: 600px) {
-  
+  .servicesCardContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+  .servicesHeading {
+    font-size: 42px;
+    line-height: 48px;
+    margin-top: 54px;
+  }
+  .servicesSubHeading {
+    margin-bottom: 40px;
+  }
 }
-
 
 /*--------------------------------------------------
                 Simple Bill  Section 
@@ -249,6 +271,64 @@ input {
 .submitBtnContainer {
   display: flex;
   justify-content: center;
+}
+
+/*--------------------------------------------------
+                Ready TO Talk  Section 
+----------------------------------------------------*/
+.talkContainer {
+  background-color: #107e4c;
+  padding: 0px 135px;
+  /* width: 1440px; */
+  height: 539px;
+  /* display: grid;
+  grid-template-columns: repeat(2,1fr); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.talkImage {
+  width: 546.6px;
+  height: 594.22px;
+  margin-top: -6%;
+}
+.talkBtn {
+  /* background-color: #0dc8de; */
+  color: white;
+  font-style: Semibold;
+  font-size: 20px;
+  line-height: 32px;
+  padding: 14px 40px;
+  border-radius: 56px;
+  border: 1px solid #0dc8de;
+  margin-top: 30px;
+}
+.talkBtn:hover {
+  background-color: #0dc8de;
+}
+
+@media only screen and (max-width: 600px) {
+  .talkContainer {
+    padding: 0px 10px;
+    /* width: 1440px; */
+    height: 710px;
+    flex-direction: column;
+  }
+  .talkImage {
+    width: 90% !important;
+    height: 80% !important;
+    margin-top: 0%;
+  }
+  .talkBtn {
+    /* background-color: #0dc8de; */
+    color: white;
+    font-style: Semibold;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 30px;
+    border: 1px solid #0dc8de;
+    margin-top: 5px !important;
+  }
 }
 
 /*--------------------------------------------------
