@@ -159,15 +159,9 @@
   }
 
   .bannerImg {
-    width: 70% !important;
+    width: 75% !important;
     margin: 0% auto;
     margin-bottom: 2rem;
-  }
-
-  .upFramer {
-    position: absolute;
-    top: 0;
-    right: 0;
   }
 
   .upFramer {
@@ -189,14 +183,15 @@
 @media only screen and (min-device-width: 578px) and (max-device-width: 778px) {
   .bannerContainer {
     padding: 0px 20px !important;
+    padding-bottom: 12% !important;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 
   .BannerHeading {
-    font-size: 42px;
-    line-height: 48px;
+    font-size: 36px;
+      line-height: 42px;
     margin-top: 2rem;
   }
 
@@ -205,30 +200,78 @@
     font-size: 18px;
     line-height: 32px;
   }
+ .primaryBtn {
+   font-size: 20px;
+   line-height: 32px;
+   padding: 5px 25px;
+   margin-top: 2rem;
+ }
+
+ .bannerImg {
+   width: 75% !important;
+   margin: 0% auto;
+ }
+
+ .upFramer {
+   position: absolute;
+   /* bottom: -15%; */
+   top: 20%;
+   right: -10%;
+   width: 35%;
+ }
+
+ .downFramer {
+   position: absolute;
+   bottom: -15%;
+   left: -12%;
+   width: 50%;
+ }
 }
 
 @media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
   .bannerContainer {
     padding: 0px 100px !important;
-    padding-bottom: 30px !important;
+    padding-bottom: 10% !important;
   }
 
   .BannerHeading {
-    font-size: 64px;
-    line-height: 70px;
+    font-size: 52px;
+    line-height: 52px;
     margin-top: 2rem;
   }
 
   .bannerContent {
     margin-top: 5%;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 32px;
   }
+
+ .bannerImg {
+   width: 75% !important;
+   margin: 0% auto;
+ }
+
+ .upFramer {
+   position: absolute;
+   /* bottom: -15%; */
+   top: 20%;
+   right: -10%;
+   width: 35%;
+ }
+
+ .downFramer {
+   position: absolute;
+   bottom: -15%;
+   left: -12%;
+   width: 50%;
+ }
+
 }
 
 @media only screen and (min-device-width: 1035px) and (max-device-width: 1480px) {
   .bannerContainer {
     padding: 0px 80px !important;
+padding-bottom: 8% !important;
   }
 
   .BannerHeading {
@@ -305,7 +348,7 @@
   }
 
   .aboutHeading {
-    font-size: 42px;
+    font-size: 36px;
     line-height: 48px;
   }
 }
