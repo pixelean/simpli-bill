@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth ">
 
 <head>
   <meta charset="UTF-8" />
@@ -29,63 +29,39 @@
 
 <body class=" leading-normal tracking-normal">
   <!--Nav-->
-  <!-- <nav class="navContainer p-2 mt-0 w-full">
-                                                                                                                            
-    <div class="container mx-auto flex flex-wrap items-center">
-      <div class="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
-        <a class="text-white no-underline hover:text-white hover:no-underline" href="#">
-          <img src="./Asset/simplibill 1.png" alt="" />
-        </a>
-      </div>
-      <div class="flex w-full pt-2 content-center justify-between md:w-1/2 md:justify-end">
-        <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
-          <li class="mr-3">
-            <a class="inline-block py-2 px-4 text-white no-underline" href="#">Home</a>
-          </li>
-          <li class="mr-3">
-            <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-              href="#">Services</a>
-          </li>
-          <li class="mr-3">
-            <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-              href="#">Features</a>
-          </li>
-          <li class="mr-3">
-            <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4"
-              href="#">About Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> -->
 
+  <div class=" navContainer ">
+    <div class=" navbar">
+      <div>
+        <img src="./Asset/simplibill 1.png" alt="" />
 
-  <div class="navbar navContainer">
-    <div class="navbar-start">
-      <img src="./Asset/simplibill 1.png" alt="" />
-      <div class="dropdown flex  !ml-auto">
-        <label tabindex="0" class="btn btn-ghost lg:hidden ">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-          </svg>
-        </label>
-        <ul tabindex="0"
-          class="menu menu-compact !focus:bg-none !hover:bg-none  dropdown-content mt-14 p-2 shadow bg-base-100 rounded-box w-52 ">
-          <li><a class="active:bg-white">Home</a></li>
-          <li><a class="active:bg-white">Services</a></li>
-          <li><a class="active:bg-white">Features</a></li>
-          <li><a class="active:bg-white">About Us</a></li>
-        </ul>
+      </div>
+      <div>
+        <div class="dropdown dropdown-end flex  !ml-auto">
+          <label tabindex="0" class="btn btn-ghost lg:hidden ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white " fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </label>
+          <ul tabindex="0" class="menu menu-compact dropdown-content mt-14 p-2 shadow bg-base-100 rounded-box w-52 ">
+            <li><a href="#banner" class="active:bg-white navLink">Home</a></li>
+            <li><a href="#services" class="active:bg-white navLink">Services</a></li>
+            <li><a href="#features" class="active:bg-white navLink">Features</a></li>
+            <li><a href="#about" class="active:bg-white navLink">About Us</a></li>
+            <li><a href="#about" class="active:bg-white navLink loginBtn">Login</a></li>
+          </ul>
+        </div>
       </div>
 
     </div>
     <div class="navbar-end hidden lg:flex">
       <ul class="menu menu-horizontal px-1 text-white">
-        <li><a class="active:bg-black">Home</a></li>
-        <li><a class="active:bg-black">Services</a></li>
-        <li><a class="active:bg-black">Features</a></li>
-        <li><a class="active:bg-black">About Us</a></li>
+        <li><a href="#banner" class="active:bg-black navLink">Home</a></li>
+        <li><a href="#services" class="active:bg-black navLink">Services</a></li>
+        <li><a href="#features" class="active:bg-black navLink">Features</a></li>
+        <li><a href="#about" class="active:bg-black navLink">About Us</a></li>
+        <li><a href="#about" class="active:bg-black navLink loginBtn">Login</a></li>
       </ul>
     </div>
 
@@ -93,7 +69,7 @@
 
 
   <!----------- Banner ------------->
-  <div class="bannerContainer">
+  <div id="banner" class="bannerContainer">
     <!--Left Col-->
     <div class="text-white">
       <h1 class="BannerHeading">Simplibill RCM & Technology.</h1>
@@ -114,7 +90,7 @@
 
 
   <!-- About Us -->
-  <div class="aboutContainer ">
+  <div id="about" class="aboutContainer ">
     <div class=" ">
       <!--Add your product image here-->
       <img src="./Asset/Group 34.png" class="aboutImg" alt="" />
@@ -147,7 +123,7 @@
 
   <!-- Services Section Start -->
 
-  <section class="servicesSection ">
+  <section id="services" class="servicesSection ">
     <div class="servicesMainHeading container mx-auto">
       <div class="-mx-4 flex flex-wrap ">
         <div class="w-full px-4">
@@ -288,8 +264,8 @@
                 <input type="text" class="no-outline" id="comunication" placeholder="Enter your method">
               </div>
             </div>
-            
-            
+
+
             <div>
               <div class="inputParent ">
                 <label for="email">Title *</label>
@@ -303,8 +279,8 @@
                 <label for="email">Email *</label>
                 <input type="text" class="no-outline" id="email" placeholder="Enter your email address here">
               </div>
-              </div>
-              </div>
+            </div>
+          </div>
         </div>
 
         <div class="submitBtnContainer">
@@ -320,47 +296,48 @@
 
 
   <!-- Simple Bill Start -->
-  <section class="text-gray-600 body-font">
-    <div class=" container px-5 py-24 mx-auto flex flex-wrap">
-      <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-        <img alt="feature" class="billBannerImg object-cover object-center h-full w-full"
-          src="./Asset/Rectangle 25.png">
+  <section id="features" class="billContainer">
+
+    <div class="billBannerImg">
+      <img alt="feature" class="" src="./Asset/Rectangle 25.png">
+    </div>
+
+
+    <div class="">
+      <h1 class="billHeading">SimpliBill App & Portal Features</h1>
+      <p class="billSubContent">Simplibill has developed a technology to help healthcare organizations streamline
+        their revenue cycle operations. </p>
+
+      <div class="flex items-center mb-10">
+        <img src="./Asset/Vector (2).png" alt="" srcset="">
+        <h2 class="BillList">Secure, Cloud-Based Access</h2>
       </div>
-      <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-        <h1 class="billHeading">SimpliBill App & Portal Features</h1>
-        <p class="billSubContent">Simplibill has developed a technology to help healthcare organizations streamline
-          their revenue cycle operations. </p>
+      <div class="flex items-center mb-10">
+        <img src="./Asset/Vector (2).png" alt="" srcset="">
+        <h2 class="BillList">Real-Time Dashboard</h2>
+      </div>
+      <div class="flex items-center mb-10">
+        <img src="./Asset/Vector (2).png" alt="" srcset="">
+        <h2 class="BillList">Claims Management</h2>
+      </div>
+      <div class="flex items-center mb-10">
+        <img src="./Asset/Vector (2).png" alt="" srcset="">
+        <h2 class="BillList">Analytics and Reporting</h2>
+      </div>
+      <div class="flex items-center mb-10">
+        <img src="./Asset/Vector (2).png" alt="" srcset="">
+        <h2 class="BillList">Customizable Workflows</h2>
+      </div>
+      <div class="flex items-center mb-10">
+        <img src="./Asset/Vector (2).png" alt="" srcset="">
+        <h2 class="BillList">Patient Engagement</h2>
+      </div>
 
-        <div class="flex items-center mb-10">
-          <img src="./Asset/Vector (2).png" alt="" srcset="">
-          <h2 class="BillList">Secure, Cloud-Based Access</h2>
-        </div>
-        <div class="flex items-center mb-10">
-          <img src="./Asset/Vector (2).png" alt="" srcset="">
-          <h2 class="BillList">Real-Time Dashboard</h2>
-        </div>
-        <div class="flex items-center mb-10">
-          <img src="./Asset/Vector (2).png" alt="" srcset="">
-          <h2 class="BillList">Claims Management</h2>
-        </div>
-        <div class="flex items-center mb-10">
-          <img src="./Asset/Vector (2).png" alt="" srcset="">
-          <h2 class="BillList">Analytics and Reporting</h2>
-        </div>
-        <div class="flex items-center mb-10">
-          <img src="./Asset/Vector (2).png" alt="" srcset="">
-          <h2 class="BillList">Customizable Workflows</h2>
-        </div>
-        <div class="flex items-center mb-10">
-          <img src="./Asset/Vector (2).png" alt="" srcset="">
-          <h2 class="BillList">Patient Engagement</h2>
-        </div>
-
-        <div>
-          <img src="./Asset/image 9.png" alt="" class="ml-32">
-        </div>
+      <div>
+        <img src="./Asset/image 9.png" alt="" class="ml-32">
       </div>
     </div>
+
   </section>
 
 
@@ -370,8 +347,8 @@
     <!--Left Col-->
     <div class="">
 
-      <h1 class="aboutHeading text-white ">Ready to talk?</h1>
-      <p class="aboutContent leading-normal my-8 text-white">
+      <h1 class="talkHeading">Ready to talk?</h1>
+      <p class="talkContent">
         Learn how we transform the revenue cycle with solutions that <br />
         streamline thepatient experience, drive operational efficiency <br />
         and improve financial performance.

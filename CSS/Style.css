@@ -1,7 +1,37 @@
-/* body{
-  font-family: 'Poppins', sans-serif !important;
- 
-} */
+.navLink {
+  padding-left: 40px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* mouse over link */
+.navLink:hover {
+  color: #0dc8de;
+}
+
+.loginBtn {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  padding: 12px 50px;
+  border-radius: 48px !important;
+  border: 2px solid #0dc8de;
+}
+
+.loginBtn:hover {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  padding: 12px 50px;
+  border-radius: 48px !important;
+  border: 2px solid #0dc8de;
+  background-color: #0DC8DE !important;
+}
 
 /*--------------------------------------------------
                 Header Section 
@@ -16,6 +46,24 @@
   .navContainer {
     padding: 0px 0px !important;
   }
+.navbar {
+    justify-content: space-between !important;
+  }
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 778px) {
+  .navContainer {
+    padding: 0px 100px !important;
+  }
+.navbar {
+    justify-content: space-between !important;
+  }
+}
+
+@media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
+  .navContainer {
+    padding: 0px 100px !important;
+  }
 }
 
 /*--------------------------------------------------
@@ -27,7 +75,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between !important;
-    align-items: center;
+  align-items: center;
 }
 
 .BannerHeading {
@@ -52,7 +100,7 @@
 .primaryBtn {
   background-color: #0dc8de;
   color: white;
-  font-style: Semibold;
+  font-weight: 600;
   font-size: 20px;
   line-height: 32px;
   padding: 14px 40px;
@@ -71,7 +119,7 @@
     padding: 0px 10px !important;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-      align-items: center;
+    align-items: center;
   }
 
   .BannerHeading {
@@ -101,7 +149,6 @@
 }
 
 @media only screen and (min-device-width: 578px) and (max-device-width: 778px) {
-
   .bannerContainer {
     padding: 0px 20px !important;
     display: grid;
@@ -124,19 +171,19 @@
 
 @media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
   .bannerContainer {
-    padding: 0px 50px !important;
+    padding: 0px 100px !important;
     padding-bottom: 30px !important;
   }
 
   .BannerHeading {
-    font-size: 42px;
-    line-height: 48px;
+    font-size: 64px;
+    line-height: 70px;
     margin-top: 2rem;
   }
 
   .bannerContent {
     margin-top: 5%;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 32px;
   }
 }
@@ -144,7 +191,6 @@
 @media only screen and (min-device-width: 1035px) and (max-device-width: 1480px) {
   .bannerContainer {
     padding: 0px 80px !important;
-
   }
 
   .BannerHeading {
@@ -167,10 +213,10 @@
   padding: 140px 135px !important;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    background-image: url("../Asset/aboutVector.png");
-    background-repeat: no-repeat;
-    background-position: right bottom;
+  align-items: center;
+  background-image: url("../Asset/aboutVector.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .aboutHeading {
@@ -192,7 +238,7 @@
     padding: 30px 10px !important;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-      justify-content: center;
+    justify-content: center;
   }
 
   .aboutImg {
@@ -228,7 +274,7 @@
 
 @media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
   .aboutContainer {
-    padding: 80px 50px !important;
+    padding: 80px 100px !important;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
@@ -266,22 +312,22 @@
   color: white;
   width: 565px !important;
   height: 298px !important;
-    padding: 30px 40px;
-  }
-  
-  .servicesCard>h4 {
-    Font-family: Gilroy;
-    font-weight: 600;
-    Font-size: 24px;
-    Line-height: 32px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .cardTitle>p {
-    Font-family: Gilroy;
-    Font-size: 16px;
-    Line-height: 24px;
+  padding: 30px 40px;
+}
+
+.servicesCard>h4 {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.cardTitle>p {
+  font-family: Gilroy;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .servicesHeading {
@@ -313,7 +359,7 @@
 @media only screen and (max-width: 600px) {
   .servicesSection {
     padding: 50px 10px;
-    }
+  }
 
   .servicesCardContainer {
     display: grid;
@@ -321,11 +367,11 @@
     gap: 40px;
   }
 
-        .servicesCard {
-          width: 98% !important;
-          height: 100% !important;
-          padding: 15px 20px;
-        }
+  .servicesCard {
+    width: 98% !important;
+    height: 100% !important;
+    padding: 15px 20px;
+  }
 
   .servicesHeading {
     font-size: 42px;
@@ -343,54 +389,54 @@
     padding: 70px 20px;
   }
 
-    .servicesCardContainer {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 40px;
-    }
+  .servicesCardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
 
-    .servicesCard {
-      width: 98% !important;
-      height: 100% !important;
-      padding: 15px 20px;
-    }
+  .servicesCard {
+    width: 98% !important;
+    height: 100% !important;
+    padding: 15px 20px;
+  }
 }
 
 @media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
   .servicesSection {
-    padding: 80px 50px;
+    padding: 80px 100px;
   }
 
-        .servicesCardContainer {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 40px;
-        }
-    
-        .servicesCard {
-          width: 98% !important;
-          height: 100% !important;
-          padding: 15px 30px;
-        }
-        }
-    
-        @media only screen and (min-device-width: 1035px) and (max-device-width: 1450px) {
-          .servicesSection {
-            padding: 100px 80px;
-          }
-    
-          .servicesCardContainer {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 40px;
-          }
-    
-          .servicesCard {
-            width: 98% !important;
-            height: 100% !important;
-            padding: 15px 30px;
-          }
-        }
+  .servicesCardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .servicesCard {
+    width: 98% !important;
+    height: 100% !important;
+    padding: 15px 30px;
+  }
+}
+
+@media only screen and (min-device-width: 1035px) and (max-device-width: 1450px) {
+  .servicesSection {
+    padding: 100px 80px;
+  }
+
+  .servicesCardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .servicesCard {
+    width: 98% !important;
+    height: 100% !important;
+    padding: 15px 30px;
+  }
+}
 
 /*--------------------------------------------------
                 Form  Section 
@@ -427,7 +473,7 @@
 .inputsContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-    column-gap: 1%;
+  column-gap: 1%;
 }
 
 .inputBox {
@@ -443,15 +489,13 @@
   border-bottom-style: groove;
   background-color: #f4feff;
   width: 360px !important;
-
 }
 
 .inputParent label {
-  Font-family: Gilroy;
+  font-family: Gilroy;
   font-weight: 700;
-  Font-size: 16px;
-  Line-height: 24px;
-
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .no-outline:focus {
@@ -500,7 +544,7 @@
     row-gap: 10%;
   }
 
-  .formHeading>h1 {
+    .formHeading>h1 {
     font-size: 36px;
     line-height: 42px;
     text-align: center;
@@ -510,87 +554,10 @@
   .inputBox {
     width: 90% !important;
     margin: 0% auto;
-    }
-    
-    .inputParent input {
-      width: 95% !important;
-    
-    }
-    
-    .submitBtn {
-      padding: 14px 20px;
-      width: 220px;
-      height: 52px;
-      margin-top: 90px;
-      margin-bottom: 50px !important;
-    }
-    
-    }
-    
-    @media only screen and (min-device-width: 578px) and (max-device-width: 778px) {
-      .inputsContainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* column-gap: 10%; */
-    
-      }
-    
-      .formContainer {
-        padding: 0px 20px;
-      }
-    
-      .inputsContainer {
-        display: flex;
-        justify-content: space-around;
-        align-items: start;
-        /* column-gap: 10%; */
-      }
-    
-      .inputBox {
-        width: 95% !important;
-        margin: 0% auto;
-      }
-    
-      .inputParent input {
-        width: 100% !important;
-      }
-    
-      .submitBtn {
-        padding: 14px 20px;
-        width: 220px;
-        height: 52px;
-        margin-top: 90px;
-        margin-bottom: 50px !important;
-      }
-    }
-    
-    @media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
-      .inputsContainer {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        /* column-gap: 10%; */
-    
-      }
-    
-      .formContainer {
-        padding: 0px 50px;
-      }
-    
-      .inputsContainer {
-        display: flex;
-        justify-content: space-around;
-        align-items: start;
-        /* column-gap: 10%; */
-      }
-    
-      .inputBox {
-        width: 95% !important;
-    margin: 0% auto;
   }
 
   .inputParent input {
-    width: 100% !important;
-
+    width: 95% !important;
   }
 
   .submitBtn {
@@ -600,24 +567,103 @@
     margin-top: 90px;
     margin-bottom: 50px !important;
   }
-
 }
 
+@media only screen and (min-device-width: 578px) and (max-device-width: 778px) {
+  .inputsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+    /* column-gap: 10%; */
+  .formContainer {
+    padding: 0px 20px;
+  }
+
+  .inputsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    /* column-gap: 10%; */
+  }
+
+  .inputBox {
+    width: 95% !important;
+    margin: 0% auto;
+  }
+
+  .inputParent input {
+    width: 100% !important;
+  }
+
+  .submitBtn {
+    padding: 14px 20px;
+    width: 220px;
+    height: 52px;
+    margin-top: 90px;
+    margin-bottom: 50px !important;
+  }
+}
+
+@media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
+  .inputsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+    /* column-gap: 10%; */
+  .formContainer {
+    padding: 0px 100px;
+  }
+
+  .inputsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    /* column-gap: 10%; */
+  }
+
+  .inputBox {
+    width: 95% !important;
+    margin: 0% auto;
+  }
+
+  .inputParent input {
+    width: 100% !important;
+  }
+
+  .submitBtn {
+    padding: 14px 20px;
+    width: 220px;
+    height: 52px;
+    margin-top: 90px;
+    margin-bottom: 50px !important;
+  }
+}
 
 /*--------------------------------------------------
                     Simple Bill  Section 
     ----------------------------------------------------*/
+.billContainer {
+  padding: 130px 132px 135px 172px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 102px;
+  justify-content: space-between;
+  color: black;
+}
 
 .billBannerImg {
   width: 570px !important;
-  height: 690px !important;
-
+  /* height: 690px !important; */
 }
 
 .billHeading {
   color: #0f1511;
+  letter-spacing: -0.02em;
   font-family: Gilroy;
-  font-style: Bold;
+  font-weight: 700;
   font-size: 48px;
   line-height: 56px;
 }
@@ -630,6 +676,37 @@
   color: #333333;
 }
 
+@media only screen and (max-width: 600px) {
+  .billContainer {
+    padding: 30px 10px !important;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    row-gap: 20px;
+  }
+
+  .billBannerImg {
+    width: 98% !important;
+    /* height: 690px !important; */
+  }
+
+  .billHeading {
+    font-size: 34px;
+    line-height: 42px;
+  }
+}
+
+@media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
+  .billContainer {
+    padding: 90px 100px !important;
+  }
+
+  .billBannerImg {
+    width: 95% !important;
+    /* height: 690px !important; */
+  }
+}
+
 /*--------------------------------------------------
                 Ready TO Talk  Section 
 ----------------------------------------------------*/
@@ -638,16 +715,33 @@
   padding: 0px 135px;
   height: 539px;
   display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: space-between;
+  color: white;
+}
+
+.talkHeading {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.talkContent {
+  font-family: Gilroy;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .talkImage {
   width: 546.6px !important;
-    height: 594.22px !important;
-    margin-left: auto;
-    margin-top: -16%;
+  height: 594.22px !important;
+  margin-left: auto;
+  margin-top: -16%;
 }
 
 .talkBtn {
@@ -669,10 +763,10 @@
 @media only screen and (max-width: 600px) {
   .talkContainer {
     padding: 30px 10px;
-      height: 850px;
+    height: 850px;
     flex-direction: column;
     display: grid;
-      grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .talkImage {
@@ -690,26 +784,6 @@
     padding: 10px 30px;
     border: 1px solid #0dc8de;
     margin-top: 5px !important;
-  }
-}
-
-@media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
-  .talkContainer {
-    padding: 30px 50px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .talkImage {
-    width: 90% !important;
-    height: 80% !important;
-    margin: 0% auto;
-  }
-
-  .talkBtn {
-    font-size: 18px;
-    line-height: 22px;
-    padding: 12px 40px;
   }
 }
 
@@ -732,6 +806,27 @@
     padding: 12px 40px;
   }
 }
+
+@media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
+  .talkContainer {
+    padding: 30px 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .talkImage {
+    width: 90% !important;
+    height: 80% !important;
+    margin: 0% auto;
+  }
+
+  .talkBtn {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 12px 40px;
+  }
+}
+
 /*--------------------------------------------------
                 Footer  Section 
 ----------------------------------------------------*/
@@ -808,5 +903,11 @@
   .footerContainer {
     /* background-image: linear-gradient(to right, #0f1511, #15282b); */
     padding: 0px 10px !important;
+  }
+}
+
+@media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
+  .footerContainer {
+    padding: 0px 100px !important;
   }
 }
