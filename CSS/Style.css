@@ -343,6 +343,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  justify-content: space-between !important;
   background-image: url("../Asset/aboutVector.png");
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -441,9 +442,15 @@
     line-height: 48px;
   }
 }
+
 @media only screen and (min-device-width: 1034px) and (max-device-width: 1450px) {
   .aboutContainer {
     padding: 80px 110px !important;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
   }
 
 }
@@ -464,6 +471,11 @@
 
 }
 
+.cardSection {
+  display: flex;
+  justify-content: center;
+}
+
 .servicesCard {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(0px);
@@ -472,6 +484,7 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
   width: 565px !important;
+  /* max-width: 565px !important; */
   height: 298px !important;
   padding: 30px 40px;
 }
@@ -605,6 +618,24 @@
   }
 }
 
+/* @media only screen and (min-device-width: 1450px) and (max-device-width: 2250px) {
+ .servicesCard {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  width: 565px !important;
+  height: 298px !important;
+  padding: 30px 40px;
+}
+.servicesCardContainer {
+   margin-left: 0%  !important;
+}
+} */
+
+
 /*--------------------------------------------------
                 Form  Section 
 ----------------------------------------------------*/
@@ -640,12 +671,13 @@
 .inputsContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 1%;
+  column-gap: 15%;
 }
 
 .inputBox {
   width: 970px;
-  margin: 0% auto;
+  display: flex;
+  justify-content: center !important;
 }
 
 .inputParent input {
@@ -667,6 +699,7 @@
 
 .no-outline:focus {
   outline: none;
+
 }
 
 .inputParent {
@@ -812,13 +845,21 @@
     margin-bottom: 50px !important;
   }
 }
+
 @media only screen and (min-device-width: 1035px) and (max-device-width: 1450px) {
- 
+
   /* column-gap: 10%; */
   .formContainer {
     padding: 0px 110px;
   }
+
+  .inputBox {
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+  }
 }
+
 /*--------------------------------------------------
                     Simple Bill  Section 
     ----------------------------------------------------*/
@@ -906,6 +947,7 @@
     /* height: 690px !important; */
   }
 }
+
 @media only screen and (min-device-width: 1035px) and (max-device-width: 1450px) {
   .billContainer {
     padding: 90px 110px !important;
@@ -1044,11 +1086,13 @@
     padding: 12px 40px;
   }
 }
+
 @media only screen and (min-device-width: 1035px) and (max-device-width: 1450px) {
   .talkContainer {
     padding: 0px 110px;
   }
 }
+
 /*--------------------------------------------------
                 Footer  Section 
 ----------------------------------------------------*/
@@ -1139,6 +1183,7 @@
     padding: 0px 80px !important;
   }
 }
+
 @media only screen and (min-device-width: 1034px) and (max-device-width: 1450px) {
   .footerContainer {
     padding: 0px 110px !important;
