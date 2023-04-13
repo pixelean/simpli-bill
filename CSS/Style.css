@@ -29,6 +29,7 @@
   padding: 12px 50px;
   border-radius: 48px !important;
   border: 2px solid #0dc8de;
+margin-left: 10px;
 }
 
 .loginBtn:hover {
@@ -51,9 +52,25 @@
   .navbar {
     justify-content: space-between !important;
   }
+
+  .loginBtn {
+    color: black !important;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 0px 25px !important;
+    border-radius: 48px !important;
+    border: 2px solid #0dc8de;
+    width: 50%;
+    text-align: center !important;
+  }
+
+  .navLink {
+    padding-left: 10px;
+  }
 }
 
-@media only screen and (min-device-width: 600px) and (max-device-width: 778px) {
+@media only screen and (min-device-width: 600px) and (max-device-width: 1020px) {
   .navContainer {
     padding: 0px 50px !important;
   }
@@ -61,8 +78,24 @@
   .navbar {
     justify-content: space-between !important;
   }
-}
 
+  .loginBtn {
+    color: black !important;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 0px 25px !important;
+    border-radius: 48px !important;
+    border: 2px solid #0dc8de;
+    width: 50%;
+    text-align: center !important;
+  }
+
+  .navLink {
+    padding-left: 10px;
+  }
+}
+/* 
 @media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
   .navContainer {
     padding: 0px 80px !important;
@@ -87,9 +120,9 @@
     padding: 2px 30px;
     white-space: nowrap;
   }
-}
+} */
 
-@media only screen and (min-device-width: 1034px) and (max-device-width: 1450px) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1450px) {
   .navContainer {
     padding: 0px 110px !important;
   }
@@ -467,7 +500,8 @@
 .servicesCardContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+ row-gap: 40px;
+ column-gap: 40px;
 
 }
 
@@ -483,7 +517,7 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
-  width: 565px !important;
+  width: 770px !important;
   /* max-width: 565px !important; */
   height: 298px !important;
   padding: 30px 40px;
