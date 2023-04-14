@@ -237,7 +237,7 @@ html {
 }
 
 .primaryBtn {
-  background-color: #0dc8de;
+  background-color: transparent;
   color: white;
   font-weight: 600;
   font-size: 20px;
@@ -246,10 +246,12 @@ html {
   border-radius: 56px;
   margin-top: 2rem;
   transition: background-color 0.5s ease;
+  border: 1px solid #0dc8de;
 }
 
 .primaryBtn:hover {
-  background-image: linear-gradient(to right, #0f1511, #15282b);
+  /* background-image: linear-gradient(to right, #0f1511, #15282b); */
+background-color: #0dc8de;
   /* background-color: white; */
   border: 1px solid #0dc8de;
   color: white;
@@ -443,8 +445,8 @@ html {
 }
 
 .aboutBtn {
-  background-color: #0dc8de;
-  color: white;
+  background-color: transparent;
+  color: black;
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
@@ -452,12 +454,14 @@ html {
   border-radius: 56px;
   margin-top: 2rem;
   transition: background-color 0.5s ease;
+  border: 1px solid #0dc8de;
 }
 
 .aboutBtn:hover {
-  background-color: white;
+  background-color: #0dc8de;
   border: 1px solid #0dc8de;
-  color: black;
+  color: white;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -794,9 +798,9 @@ html {
 .no-outline:focus,
 .no-outline:active,
 .no-outline:focus-visible {
-  /* border-color: #7ba4a9; */
+  border-color: #0dc8de;
   outline: none !important;
-  border-bottom: 3px solid #7ba4a9;
+  /* border-bottom: 3px solid #7ba4a9; */
   box-shadow: none;
 }
 
@@ -822,19 +826,20 @@ html {
   gap: 10px;
   width: 360px;
   height: 52px;
-  background-color: #0dc8de;
+  background-color: transparent;
   border-radius: 61px;
   text-align: center;
-  color: white;
+  color: black;
   margin-top: 53px;
   margin-bottom: 93px !important;
   transition: background-color 0.5s ease;
+  border: 1px solid #0dc8de;
 }
 
 .submitBtn:hover {
-  background-color: #f4feff;
+  background-color: #0dc8de;
   border: 1px solid #0dc8de;
-  color: black;
+  color: white;
 }
 
 .submitBtnContainer {
@@ -1102,7 +1107,7 @@ html {
 }
 
 .talkBtn {
-  /* background-color: #0dc8de; */
+  background-color: transparent;
   color: white;
   font-style: Semibold;
   font-size: 20px;
