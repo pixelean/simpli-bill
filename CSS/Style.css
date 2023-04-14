@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth !important;
+}
 /*--------------------------------------------------
                 Header Section 
 ----------------------------------------------------*/
@@ -29,7 +32,8 @@
   padding: 12px 50px;
   border-radius: 48px !important;
   border: 2px solid #0dc8de;
-margin-left: 10px;
+  margin-left: 10px;
+  transition: background-color 0.5s ease;
 }
 
 .loginBtn:hover {
@@ -95,6 +99,7 @@ margin-left: 10px;
     padding-left: 10px;
   }
 }
+
 /* 
 @media only screen and (min-device-width: 778px) and (max-device-width: 1034px) {
   .navContainer {
@@ -159,6 +164,7 @@ margin-left: 10px;
   justify-content: space-between !important;
   align-items: center;
   padding-bottom: 8% !important;
+  background-attachment: fixed;
 }
 
 .BannerHeading {
@@ -185,12 +191,48 @@ margin-left: 10px;
   position: absolute;
   top: 25%;
   right: 0;
+/* position: relative; */
+  animation-name: upFramer;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
 }
 
 .downFramer {
   position: absolute;
   bottom: -15%;
   left: -12%;
+animation-name: downFramer;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes upFramer {
+  from {
+    /* right: 0%; */
+    top: 30%;
+
+  }
+
+  to {
+    /* right: 10%; */
+    bottom: 5%;
+  }
+}
+
+@keyframes downFramer {
+  from {
+    right: 5%;
+  }
+
+  to {
+    left: 0%;
+  }
 }
 
 .primaryBtn {
@@ -202,12 +244,15 @@ margin-left: 10px;
   padding: 14px 40px;
   border-radius: 56px;
   margin-top: 2rem;
+  transition: background-color 0.5s ease;
 }
 
 .primaryBtn:hover {
   background-image: linear-gradient(to right, #0f1511, #15282b);
+  /* background-color: white; */
   border: 1px solid #0dc8de;
   color: white;
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -405,6 +450,7 @@ margin-left: 10px;
   padding: 14px 40px;
   border-radius: 56px;
   margin-top: 2rem;
+  transition: background-color 0.5s ease;
 }
 
 .aboutBtn:hover {
@@ -500,8 +546,8 @@ margin-left: 10px;
 .servicesCardContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
- row-gap: 40px;
- column-gap: 40px;
+  row-gap: 40px;
+    column-gap: 40px;
 
 }
 
@@ -521,6 +567,24 @@ margin-left: 10px;
   /* max-width: 565px !important; */
   height: 298px !important;
   padding: 30px 40px;
+  transition: box-shadow 0.3s ease;
+  }
+  
+  .servicesCard:hover {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
+    width: 770px !important;
+    /* max-width: 565px !important; */
+    height: 298px !important;
+    padding: 30px 40px;
+  
+    box-shadow: 20px 22px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 20px 22px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 20px 22px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .servicesCard>h4 {
@@ -722,6 +786,7 @@ margin-left: 10px;
   border-bottom-style: groove;
   background-color: #f4feff;
   width: 360px !important;
+  transition: border 0.5s ease;
 }
 
 .inputParent label {
@@ -754,6 +819,7 @@ margin-left: 10px;
   color: white;
   margin-top: 53px;
   margin-bottom: 93px !important;
+  transition: background-color 0.5s ease;
 }
 
 .submitBtn:hover {
@@ -1036,6 +1102,7 @@ margin-left: 10px;
   border-radius: 56px;
   border: 1px solid #0dc8de;
   margin-top: 30px;
+  transition: background-color 0.5s ease;
 }
 
 .talkBtn:hover {
