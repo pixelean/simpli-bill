@@ -75,7 +75,7 @@ html {
   }
 }
 
-@media only screen and (min-device-width: 600px) and (max-device-width: 1020px) {
+@media only screen and (min-device-width: 600px) and (max-device-width: 1034px) {
   .navContainer {
     padding: 0px 50px !important;
   }
@@ -86,14 +86,23 @@ html {
 
   .loginBtn {
     color: black !important;
+      font-size: 18px;
+      line-height: 32px;
+      padding: 0px 30px !important;
+      border: 2px solid #0dc8de;
+      width: 55%;
+      text-align: center !important;
+    }
+    
+    .loginBtn:hover {
+      color: white;
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
     padding: 0px 25px !important;
     border-radius: 48px !important;
     border: 2px solid #0dc8de;
-    width: 50%;
-    text-align: center !important;
+    background-color: #0DC8DE !important;
   }
 
   .navLink {
@@ -251,7 +260,7 @@ html {
 
 .primaryBtn:hover {
   /* background-image: linear-gradient(to right, #0f1511, #15282b); */
-background-color: #0dc8de;
+  background-color: #0dc8de;
   /* background-color: white; */
   border: 1px solid #0dc8de;
   color: white;
@@ -387,6 +396,12 @@ background-color: #0dc8de;
     right: -10%;
     width: 35%;
   }
+ .primaryBtn {
+   font-size: 20px;
+   line-height: 32px;
+   padding: 10px 40px;
+   margin-top: 2rem;
+ }
 
   .downFramer {
     position: absolute;
@@ -506,7 +521,7 @@ background-color: #0dc8de;
   .aboutBtn {
     font-size: 20px;
     line-height: 32px;
-    padding: 5px 25px;
+    padding: 7px 30px;
     border-radius: 56px;
   }
 }
@@ -525,6 +540,17 @@ background-color: #0dc8de;
     font-size: 42px;
     line-height: 48px;
   }
+.aboutBtn {
+  font-size: 20px;
+  line-height: 32px;
+  padding: 10px 40px;
+  transition: background-color 0.5s ease;
+  border: 1px solid #0dc8de;
+}
+
+.aboutBtn:hover {
+  border: 1px solid #0dc8de;
+}
 }
 
 @media only screen and (min-device-width: 1034px) and (max-device-width: 1450px) {
@@ -553,7 +579,6 @@ background-color: #0dc8de;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 40px;
   column-gap: 40px;
-
 }
 
 .cardSection {
@@ -562,34 +587,20 @@ background-color: #0dc8de;
 }
 
 .servicesCard {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background-color: rgba(37, 34, 37, 0.1);
+    border-radius: 20px;
   color: white;
   width: 770px !important;
-  /* max-width: 565px !important; */
   height: 298px !important;
   padding: 30px 40px;
   transition: box-shadow 0.3s ease;
+  border: 1px solid transparent;
 }
 
 .servicesCard:hover {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: white;
-  width: 770px !important;
-  /* max-width: 565px !important; */
-  height: 298px !important;
-  padding: 30px 40px;
-
-  box-shadow: 20px 22px 10px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 20px 22px 10px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 20px 22px 10px 0px rgba(0, 0, 0, 0.75);
+  border: 1px solid #1CB26E;
+    /* filter: drop-shadow(0px 20px rgba(0, 0, 0, 0.15)); */
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
 }
 
 .servicesCard>h4 {
@@ -690,11 +701,11 @@ background-color: #0dc8de;
     padding: 80px 80px;
   }
 
-  .servicesCardContainer {
+    /* .servicesCardContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
-  }
+  */
 
   .servicesCard {
     width: 98% !important;
